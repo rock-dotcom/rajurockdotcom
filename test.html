@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-photo/top-view-arrangement-with-salad-boxes-sauce_23-2148247882.jpg?t=st=1732382779~exp=1732386379~hmac=47c8c39945a48b0639d5dbd0d19efb5a4a5ceef9d69c1aff4f83a28325b72bc6&w=996);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .username{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .password{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .login-button {
+            background-color: dodgerblue;
+            font-size: larger;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 130px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            color: white;
+        }
+        .form-container {
+            background-color: aliceblue;
+            position: absolute;
+            top: 9%;
+            left:10%;
+            padding: 60px;
+            border-radius: 6px;
+            max-width: 400px;
+            margin: 200px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="menu.html" method="get">
+            <div class="username">
+                <label for="NAME">USERNAME</label>
+                <input type="text" id="NAME" required>
+            </div>
+            
+            <div class="password">
+                <label for="PASS">PASSWORD</label>
+                <input type="password" id="PASS" required>
+            </div>
+            
+            <div class="menu1">
+                <button class="login-button" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

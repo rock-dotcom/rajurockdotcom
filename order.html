@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-image: url(https://deorwineblog.b-cdn.net/uploads/2019/11/inner-food-delivery-app.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .nav-bar {
+                position: fixed;
+                top: 0;
+                left: 60px;
+                right: 0;
+                background-color: rgba(243, 170, 36, 0.9);
+                padding: 15px;
+                display: flex;
+                justify-content: right;  /* Center the navigation links */
+                gap: 20px;  /* Add space between links */
+            }
+            
+            .nav-bar a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 15px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+                font-weight: bold;
+            }
+            
+            .nav-bar a:hover {
+                background-color: #ff6600;  /* Brighter orange on hover */
+            }margin: 0;
+            font-family: Arial, sans-serif;
+            
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            padding-left: 15%;
+            padding-top: 80px;
+            padding-bottom: 60px;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2%;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-title {
+            text-align: center;
+            color: #e65c00;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .order-btn {
+            background-color: #e65c00;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-btn:hover {
+            background-color: #ff6600;
+        }
+
+        .selected-item {
+            background-color: #fff3e6;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ffd9b3;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(230, 92, 0, 0.9);
+            padding: 15px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            z-index: 1000;
+        }
+.nav-bar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 15px
+        }
+
+        .nav-bar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .social-icons {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 30px;
+}
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
+    </nav>
+ <div class="form-container">
+        <h2 class="form-title">Complete Your Order</h2>
+        <form action="Thankyou.html" method="get">
+            <div id="selected-item" class="selected-item">
+            </div>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="house">House No.</label>
+                <input type="text" id="house" name="house" placeholder="Enter house number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="street">Street</label>
+                <input type="text" id="street" name="street" placeholder="Enter street name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="city">Select City</label>
+                <select id="city" name="city" required>
+                    <option value="">Select your city</option>
+                    <option value="Mehdipatnam">Mehdipatnam</option>
+                    <option value="Nanal Nagar">Nanal Nagar</option>
+                    <option value="Langarouse">Langarouse</option>
+                    <option value="Suncity">Suncity</option>
+                    <option value="Bandalaguda">Bandalaguda</option>
+                    <option value="kalimandhir">Kalimandhir</option>
+                    <option value="Aziznagar">Aziznagar</option>
+                    <option value="Himayath Nagar">Himayath Nagar</option>
+                    <option value="Moinabad">Moinabad</option>
+                </select>
+            </div>
+            <div class="order">
+                <button type="submit" class="order-btn">Place Order</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+</body>
+</html>

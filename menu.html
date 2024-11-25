@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THINDHAM RANDI's Deliciouss</title>
+    <style>
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .food-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .food-item:hover {
+            transform: translateY(-5px);
+        }
+        .food-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .food-item h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .food-item p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .order-btn {
+            background-color: #e65c00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .order-btn:hover {
+            background-color: #ff6600;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body style="background-color:antiquewhite; margin: 0; font-family: Arial, sans-serif;">
+    <header>
+        <h1>THINDHAM RANDI's  Deliciouss</h1>
+        <p>Order your favorite food</p>
+    </header>
+    
+    <div class="menu-container">
+        <div class="food-item">
+            <form action="order.html" method="get">
+                <img src="Masala-dosa.jpg" alt="Masala Dosa">
+                <h3>Masala Dosa</h3>
+                <p>Crispy crepe filled with spiced potato mixture</p>
+                <p>₹99</p>
+                <input type="hidden" name="item" value="Masala Dosa">
+                <input type="hidden" name="price" value="99">
+                <button type="submit" class="order-btn">Order Now</button>
+            </form>
+        </div>
+
+        <div class="food-item">
+            <form action="order.html" method="get">
+            <img src="idly2.jpg" alt="Idli">
+            <h3>Idly</h3>
+            <p>Dip, soak, savor- served with sambar and chutney</p>
+            <p>₹60</p>
+            <input type="hidden" name="item" value="Idly">
+                <input type="hidden" name="price" value="60">
+                <button type="submit" class="order-btn">Order Now</button>
+            </form>
+            </div>
+
+        <div class="food-item">
+            <form action="order.html" method="get">
+           <img src="wada.jpg" alt="Vada">
+            <h3>Vada</h3>
+            <p>Crispy on the outside, fluffy on the inside—our wada is pure bliss served with coconut chutney</p>
+            <p>₹80</p> 
+            <button class="order-btn">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <form action="order.html" method="get">
+           <img src="Bonda.jpg" alt="Bonda">
+            <h3>Bonda</h3>
+            <p>Warm, fluffy, and made with love—our bondas are calling your name</p>
+            <p>₹80</p>
+            <button class="order-btn">Order Now</button>
+           </div>
+
+    <div class="food-item">
+        <form action="order.html" method="get">
+            <img src="puri.jpg" alt="puri">
+            <h3>puri</h3>
+            <p>Why wait? Treat yourself to the best puris in town</p>
+            <p>₹90</p>
+            <button class="order-btn">Order Now</button>
+            </div>
+    <div class="food-item">
+        <form action="order.html" method="get">
+                <img src="upma.jpg" alt="upma">
+                <h3>Upma</h3>
+                <p>Fuel your day with the perfect balance of taste and nutrition – Upma it is!</p>
+                <p>₹60</p>
+                <button class="order-btn">Order Now</button>
+                </div>
+    <div class="food-item">
+        <form action="order.html" method="get">
+                    <img src="sprouts.jpg" alt="Sprouts">
+                    <h3>Sprouts Salad</h3>
+                    <p>Tiny powerhouses of nutrition – add sprouts to your Bowl today</p>
+                    <p>₹120</p>
+                    <button class="order-btn">Order Now</button>          
+    </div>
+    <div class="food-item">
+        <form action="order.html" method="get">
+         <img src="ragijava.png" alt="ragijava">
+        <h3>Ragi java</h3>
+        <p>Packed with calcium and iron – Ragi Java is the ultimate health boost</p>
+        <p>₹60</p>
+        <button class="order-btn">Order Now</button>  
+        </div>        
+    <div class="food-item">
+        <form action="order.html" method="get"><
+            <img src="magggi.jpg" alt="magggi">
+            <h3>Magggi</h3>
+            <p>RSlurp it, twist it, love it – Maggi makes every bite memorabl</p>
+            <p>₹40</p>
+            <button class="order-btn">Order Now</button>  
+            </div>     
+            <div class="food-item">
+                <form action="order.html" method="get">
+                <img src="chapathi.jpg" alt="chapathi">
+                <h3>chapathi</h3>
+                <p>Soft, fresh, and perfectly round – our chapathis are a treat for every meal!</p>
+                <p>₹60</p>
+                <button class="order-btn">Order Now</button>  
+                </div> 
+</div>
+</body>
+</html>
